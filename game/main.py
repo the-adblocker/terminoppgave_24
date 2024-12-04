@@ -132,6 +132,14 @@ image5 = button.Button(350, 150, imgimg, 1)
 image6 = button.Button(419, 150, imgimg, 1)
 image7 = button.Button(488, 150, imgimg, 1)
 
+hint1 = button.Button(582, 163, hint1img, 1)
+hint2 = button.Button(580, 159, hint2img, 1)
+hint3 = button.Button(579, 157, hint3img, 1)
+hint4 = button.Button(582, 161, hint4img, 1)
+hint5 = button.Button(580, 160, hint5img, 1)
+hint6 = button.Button(579, 158, hint6img, 1)
+hint7 = button.Button(582, 162, hint7img, 1)
+
 
 run = True
 while run:
@@ -162,6 +170,7 @@ while run:
         if folderbutton1.draw(screen) == True:
             pygame.time.wait(100)
             location = "folder1"
+            imgshow = "0"
 
 
     if location == "thrash":
@@ -177,133 +186,139 @@ while run:
         if code_slots:
             numcode.draw(screen)
 
+            #thanks andy(andreas) for match cases
+
             #Change slot 1
-            if slot1 == 0:
-                if slot1_0.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 1
-            if slot1 == 1:
-                if slot1_1.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 2
-            if slot1 == 2:
-                if slot1_2.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 3
-            if slot1 == 3:
-                if slot1_3.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 4
-            if slot1 == 4:
-                if slot1_4.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 5
-            if slot1 == 5:
-                if slot1_5.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 6
-            if slot1 == 6:
-                if slot1_6.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 7
-            if slot1 == 7:
-                if slot1_7.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 8
-            if slot1 == 8:
-                if slot1_8.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 9
-            if slot1 == 9:
-                if slot1_9.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot1 = 0
+            match slot1:
+                case 0:
+                    if slot1_0.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 1
+                case 1:
+                    if slot1_1.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 2
+                case 2:
+                    if slot1_2.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 3
+                case 3:
+                    if slot1_3.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 4
+                case 4:
+                    if slot1_4.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 5
+                case 5:
+                    if slot1_5.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 6
+                case 6:
+                    if slot1_6.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 7
+                case 7:
+                    if slot1_7.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 8
+                case 8:
+                    if slot1_8.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 9
+                case 9:
+                    if slot1_9.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot1 = 0
 
 
             #Change slot 2
-            if slot2 == 0:
-                if slot2_0.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 1
-            if slot2 == 1:
-                if slot2_1.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 2
-            if slot2 == 2:
-                if slot2_2.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 3
-            if slot2 == 3:
-                if slot2_3.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 4
-            if slot2 == 4:
-                if slot2_4.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 5
-            if slot2 == 5:
-                if slot2_5.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 6
-            if slot2 == 6:
-                if slot2_6.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 7
-            if slot2 == 7:
-                if slot2_7.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 8
-            if slot2 == 8:
-                if slot2_8.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 9
-            if slot2 == 9:
-                if slot2_9.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot2 = 0
+            match slot2:
+                case 0:
+                    if slot2_0.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 1
+                case 1:
+                    if slot2_1.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 2
+                case 2:
+                    if slot2_2.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 3
+                case 3:
+                    if slot2_3.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 4
+                case 4:
+                    if slot2_4.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 5
+                case 5:
+                    if slot2_5.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 6
+                case 6:
+                    if slot2_6.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 7
+                case 7:
+                    if slot2_7.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 8
+                case 8:
+                    if slot2_8.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 9
+                case 9:
+                    if slot2_9.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot2 = 0
 
 
             #Change slot 3
-            if slot3 == 0:
-                if slot3_0.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 1
-            if slot3 == 1:
-                if slot3_1.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 2
-            if slot3 == 2:
-                if slot3_2.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 3
-            if slot3 == 3:
-                if slot3_3.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 4
-            if slot3 == 4:
-                if slot3_4.draw(screen) == True:
-                    pygame.time.wait(100)
-                slot3 = 5
-            if slot3 == 5:
-                if slot3_5.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 6
-            if slot3 == 6:
-                if slot3_6.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 7
-            if slot3 == 7:
-                if slot3_7.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 8
-            if slot3 == 8:
-                if slot3_8.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 9
-            if slot3 == 9:
-                if slot3_9.draw(screen) == True:
-                    pygame.time.wait(100)
-                    slot3 = 0
+            match slot3:
+                case 0:
+                    if slot3_0.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 1
+                
+                case 1:
+                    if slot3_1.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 2
+                case 2:
+                    if slot3_2.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 3
+                case 3:
+                    if slot3_3.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 4
+                case 4:
+                    if slot3_4.draw(screen) == True:
+                        pygame.time.wait(100)
+                    slot3 = 5
+                case 5:
+                    if slot3_5.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 6
+                case 6:
+                    if slot3_6.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 7
+                case 7:
+                    if slot3_7.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 8
+                case 8:
+                    if slot3_8.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 9
+                case 9:
+                    if slot3_9.draw(screen) == True:
+                        pygame.time.wait(100)
+                        slot3 = 0
 
 
             #Change slot 4
@@ -378,6 +393,35 @@ while run:
         if image7.draw(screen) == True:
             pygame.time.wait(100)
             imgshow = "7"
+
+        if imgshow == "5":
+            if hint1.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "3":
+            if hint2.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "6":
+            if hint3.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "1":
+            if hint4.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "4":
+            if hint5.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "2":
+            if hint6.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
+        if imgshow == "7":
+            if hint7.draw(screen) == True:
+                pygame.time.wait(100)
+                imgshow = "0"
 
 
 
