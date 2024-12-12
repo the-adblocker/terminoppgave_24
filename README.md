@@ -26,8 +26,11 @@ The adventure (not quite) will take you into different folders to find keys, fol
 ---
 
 
-### problems
-#### I don't know what to make it into
-#### I was thinking maybe something in web? Maybe JS? Or perhaps i should do something in Godot? I have very minimal experience with either.
+<br>
+<br>
+<br>
 
-## PYGAME IT IS
+### This that you see above was the original project idea 
+However, due to lack of knowledge needed, horrible planning, and a general lack of motivation over the last few *months*, the product is a mere shell of what  i had originally intended.
+<br>
+The Product is missing some key parts of the task, including but not limited to infrastructure, web accesabillity and databases
