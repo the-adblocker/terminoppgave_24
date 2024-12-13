@@ -33,4 +33,11 @@ The adventure (not quite) will take you into different folders to find keys, fol
 ### This that you see above was the original project idea 
 However, due to lack of knowledge needed, horrible planning, and a general lack of motivation over the last few *months*, the product is a mere shell of what  i had originally intended.
 <br>
-The Product is missing some key parts of the task, including but not limited to infrastructure, web accesabillity and databases
+The Product is missing some key parts of the task, including but not limited to infrastructure, web availability and databases.
+<br>
+So wheter or not, it is concidered any good is beyond me, but while working on this project, my motivation got rebuilt a bit.
+Working with python for the first time in a long while and being able to provide some art and assets has made me want to work more.
+<br>
+This was something very fun to work on.
+<br>
+
