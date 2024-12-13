@@ -165,6 +165,15 @@ hint6 = button.Button(579, 158, hint6img, 1)
 hint7 = button.Button(582, 162, hint7img, 1)
 
 
+# I COULDN'T GET THE FONTS TO WORK
+
+# text_font = pygame.font.SysFont(None, 30)
+
+# def draw_text(text, font, text_col, x, y):
+#     txtimg = font.render(text, True, text_col)
+#     screen.plit(txtimg, (x, y))
+
+
 run = True
 while run:
 
@@ -180,6 +189,7 @@ while run:
                 pygame.time.wait(100)
                 print("Logging off...")
                 run = False
+            draw_text("HOWDY THERE WORLD", text_font, (0, 0, 0,), 220, 150)
 
 
         case "hub":
